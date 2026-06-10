@@ -6,6 +6,10 @@ function formatDur(sec) {
   return `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, "0")}`;
 }
 
+const API_URL = "https://syncwave-server-live.onrender.com/";
+
+
+
 export default function Search() {
   const { emit, state } = useSocket();
   const [query, setQuery] = useState("");
@@ -19,7 +23,7 @@ export default function Search() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&limit=25`);
+      const res = await fetch(`${API_URL}/api/search?q=${encodeURIComponent(q)}&limit=25`);
       const data = await res.json();
       if (data.error) throw new Error(data.error);
       setResults(data.results || []);
