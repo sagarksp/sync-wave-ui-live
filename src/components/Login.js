@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const ACCOUNTS = [
-  { id: "user_sagar", name: "Sagar", avatar: "S" },
-  { id: "user_alex", name: "Alex", avatar: "A" },
-  { id: "user_demo", name: "Demo", avatar: "D" },
+   { id: "user_Nandini", name: "Nandini", avatar: "N" },
+  { id: "user_Sagar", name: "Sagar", avatar: "S" },
+  { id: "user_others", name: "Other", avatar: "O" },
 ];
 
 const DEVICES = ["Living Room", "Bedroom", "Office", "Mobile", "Laptop"];
