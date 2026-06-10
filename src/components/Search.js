@@ -6,7 +6,7 @@ function formatDur(sec) {
   return `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, "0")}`;
 }
 
-const API_URL = "https://syncwave-server-live.onrender.com/";
+const API_URL = "https://saavn.sumit.co";
 
 
 
